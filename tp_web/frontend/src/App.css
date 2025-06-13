@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* Increased base font size */
+  background: url('taxi.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.app-container {
+  padding: 30px; /* Increased padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px; /* Increased margin */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem; /* Larger title */
+}
+
+.black-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px; /* Larger radius */
+  padding: 30px; /* Increased padding */
+  margin-bottom: 30px; /* Increased margin */
+  width: 90%;
+  max-width: 900px; /* Slightly wider */
+}
+
+.input-group {
+  display: flex;
+  gap: 15px; /* Increased gap */
+  margin-bottom: 20px; /* Increased margin */
+}
+
+.input-group input {
+  flex-grow: 1;
+  padding: 12px; /* Larger input fields */
+  border-radius: 6px; /* Larger radius */
+  border: none;
+  font-size: 1.1rem; /* Larger font */
+}
+
+.btn-group {
+  display: flex;
+  gap: 15px; /* Increased gap */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px; /* Increased margin */
+}
+
+button {
+  background-color: #b94f00; /* Changed from blue to orange-brown */
+  color: white;
+  border: none;
+  padding: 12px 25px; /* Larger buttons */
+  border-radius: 6px; /* Larger radius */
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.1rem; /* Larger font */
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #963d00; /* Darker shade for hover */
+}
+
+.output {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 20px; /* Increased padding */
+  border-radius: 8px; /* Larger radius */
+  margin-top: 20px; /* Increased margin */
+  overflow-x: auto;
+  font-size: 1.1rem; /* Larger font */
+}
+
+.plot-container {
+  margin-top: 20px; /* Increased margin */
+}
+
+.plot-container iframe {
+  width: 100%;
+  height: 500px; /* Taller plot */
+  border: none;
+  border-radius: 8px; /* Larger radius */
+}
+
+.prediction-area {
+  display: flex;
+  gap: 30px; /* Increased gap */
+  flex-wrap: wrap;
+}
+
+.predictor {
+  flex: 1;
+  min-width: 300px; /* Wider predictors */
+}
+
+.predictor h3 {
+  color: white;
+  margin-top: 0;
+  font-size: 1.5rem; /* Larger heading */
+}
+
+.predictor input {
+  width: 100%;
+  padding: 12px; /* Larger inputs */
+  margin-bottom: 15px; /* Increased margin */
+  border-radius: 6px; /* Larger radius */
+  border: none;
+  font-size: 1.1rem; /* Larger font */
+}
+
+.prediction-result {
+  background-color: white;
+  color: #b94f00; /* Using our new color */
+  padding: 15px; /* Increased padding */
+  border-radius: 8px; /* Larger radius */
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem; /* Larger result text */
+  margin-top: 15px; /* Increased margin */
+  border: 2px solid #b94f00; /* Added border */
+}
+
+@media (max-width: 600px) {
+  body, html {
+    font-size: 16px; /* Slightly smaller on mobile */
+  }
+  
+  .prediction-area {
+    flex-direction: column;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .black-container {
+    padding: 20px; /* Slightly less padding on mobile */
+  }
+}

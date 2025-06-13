@@ -1,0 +1,7 @@
+fastapi
+pyarrow
+uvicorn
+python-multipart
+dask
+pandas
+matplotlib
